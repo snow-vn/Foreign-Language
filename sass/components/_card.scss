@@ -1,0 +1,70 @@
+.contents{
+
+    // background-color: rgb(24, 141, 20);
+    height: auto;
+    width: 100%;
+
+    .content{
+        height: 100%;
+        width: 100%;
+        // background-color: goldenrod;
+
+        .card{
+            background-color: white;
+            height: 400px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.8;
+
+            &:hover img{
+                transform: scale(1.08);
+                opacity: 0.8;
+                transition: 0.8;
+                
+            }
+
+            &-picture{
+               overflow: hidden;
+                height: 35%;
+                img{
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                    
+                }
+            }
+
+            &-text{
+                
+                height: 60%;
+
+               &-star{
+
+                i{
+                    color: gold;
+                }
+               }
+               &-price{
+                // background-color: rgb(107, 5, 5);
+                width: 100%;
+                height: auto;
+
+                a{
+                    display: inline;
+                    float: right;
+                    background-color: green;
+                    padding: 7px 10px;
+                    border-radius: 5px;
+
+                    &:hover{
+                        color: white;
+                    }
+                    
+                }
+
+               }
+            }
+        }
+       
+    }
+    
+}

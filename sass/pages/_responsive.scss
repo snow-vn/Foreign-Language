@@ -1,0 +1,612 @@
+
+// max-width: 480px (cho điện thoại di động, hiển thị chiều ngang)
+@media screen and (max-width: 480px){
+    .home{
+        width: 100%;
+        height: auto;
+        // background-color: yellow;
+
+        // header
+        .header{
+            width: 100%;
+            height: 70px;
+            
+            .logo-img{
+                width: 7%;
+                height: 40px;
+            }
+
+            .logo-text{
+                width: 13%;
+                height: 40px;
+                margin-left: 10px;
+                
+
+                p{
+                    font-size: 1.2em;
+
+                }
+            }
+
+            .categories{
+                
+                width: 60%;
+                h3{
+                    font-size: 1.5em;
+                   padding-bottom: 20px;
+                    display: inline;
+                    
+                }
+                ul{
+
+                    li.active{
+                        display: block;
+                    }
+                    li{
+                        display: none;
+                    }
+                }
+            }
+
+            .input{
+                width: 20%;
+                margin: 0;
+                input{
+                    width: 40px;
+                    height: 20px;
+                    display: none;
+                }
+
+                i{
+                    display: none;
+                }
+            }
+        }
+        // finished header
+
+        // slider
+        .slider{
+            width: 100%;
+            height: auto;
+            // background-color: rebeccapurple;
+
+            .slide{
+                display: none;
+            }
+
+            .capture{
+                display: none;
+            }
+        }
+        // finished slider
+
+        //contents
+        .contents{
+            width: 100%;
+            height: auto;
+
+            .content{
+                width: 80%;
+                height: auto;
+                margin:0 auto;
+            }
+        }
+        // finished contents
+
+        //footer
+            .footer{
+                width: 100%;
+                height: auto;
+            }
+        //finished footer
+    }
+}
+
+
+// max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+@media screen and (max-width: 600px){
+    .home{
+        width: 100%;
+        height: auto;
+        // background-color: yellow;
+
+        // header
+        .header{
+            width: 100%;
+            height: 70px;
+            
+            .logo-img{
+                width: 7%;
+                height: 40px;
+            }
+
+            .logo-text{
+                width: 13%;
+                height: 40px;
+                margin-left: 10px;
+                
+
+                p{
+                    font-size: 1.2em;
+
+                }
+            }
+
+            .categories{
+                
+                width: 60%;
+                h3{
+                    font-size: 1.5em;
+                   padding-bottom: 20px;
+                    display: inline;
+                    
+                }
+                ul{
+
+                    li.active{
+                        display: block;
+                    }
+                    li{
+                        display: none;
+                    }
+                }
+            }
+
+            .input{
+                width: 20%;
+                margin: 0;
+                input{
+                    width: 40px;
+                    height: 20px;
+                    display: none;
+                }
+
+                i{
+                    display: none;
+                }
+            }
+        }
+        // finished header
+
+        // slider
+        .slider{
+            width: 100%;
+            height: auto;
+            // background-color: rebeccapurple;
+
+            .menu{
+                width: 90%;
+                height: auto;
+                margin:auto;
+                li{
+                    ul{
+                        left: 37%;
+                    }
+                }
+            }
+            .slide{
+                width: 80%;
+                margin: auto;
+                display: block;
+            }
+
+            .capture{
+                display: none;
+            }
+        }
+        // finished slider
+
+        //contents
+        .contents{
+            width: 100%;
+            height: auto;
+
+            .content{
+                width: 80%;
+                height: auto;
+                margin:0 auto;
+            }
+        }
+        // finished contents
+
+        //footer
+            .footer{
+                width: 100%;
+                height: auto;
+            }
+        //finished footer
+    }
+}
+
+// max-width:800px (máy tính bảng, hiển thị chiều ngang)
+@media screen and (max-width: 800px){
+    .home{
+        width: 100%;
+        height: auto;
+        // background-color: yellow;
+
+        // header
+        .header{
+            width: 100%;
+            height: 70px;
+            
+            .logo-img{
+                width: 50px;
+                height: 60px;
+            }
+
+            .logo-text{
+                width: 11%;
+                height: 40px;
+                margin-left: 10px;
+                
+
+                p{
+                    font-size: 1.7em;
+                    padding-top: 7px;
+
+                }
+            }
+
+            .categories{
+                
+                width: 60%;
+                h3{
+                    font-size: 1.5em;
+                    display: inline;
+                    
+                }
+                ul{
+
+                    li.active{
+                        display: block;
+                    }
+                    li{
+                        display: block;
+                    }
+                }
+            }
+
+            .input{
+                width: 10%;
+                margin: 0;
+                input{
+                    width: 40px;
+                    height: 20px;
+                    display: none;
+                }
+
+                i.fa-search{
+                    display: block;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+        // finished header
+
+        // slider
+        .slider{
+            width: 100%;
+            height: auto;
+            // background-color: rebeccapurple;
+
+            .wide{
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }
+            .menu{
+                width: 100%;
+                height: auto;
+                li{
+                    ul{
+                        left: 25%;
+                    }
+                }
+            }
+            .slide{
+                width: 100%;
+                height: auto;
+                
+                display: block;
+            }
+
+            .capture{
+                width: 100%;
+
+                height: auto;
+                display: block;
+            }
+        }
+        // finished slider
+
+        //contents
+        .contents{
+            width: 100%;
+            height: 2000px;
+
+            .content{
+                width: 100%;
+                height: auto;
+                margin:0 auto;
+
+                .card{
+                    width: 100%;
+                    height: 620px;
+
+                    
+                }
+            }
+        }
+        // finished contents
+
+        //footer
+            .footer{
+                width: 100%;
+                height: auto;
+                .grid{
+
+                    .fter{
+                        width: 120%;
+                        float: left;
+
+                        input{
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        //finished footer
+    }
+}
+
+// max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+@media screen and (max-width: 768px){
+    .home{
+        width: 100%;
+        height: auto;
+        // background-color: yellow;
+
+        // header
+        .header{
+            width: 100%;
+            height: 70px;
+            
+            .logo-img{
+                width: 7%;
+                height: 40px;
+            }
+
+            .logo-text{
+                width: 13%;
+                height: 40px;
+                margin-left: 10px;
+                
+
+                p{
+                    font-size: 1.2em;
+
+                }
+            }
+
+            .categories{
+                
+                width: 60%;
+                h3{
+                    font-size: 1.5em;
+                   padding-bottom: 20px;
+                    display: inline;
+                    
+                }
+                ul{
+
+                    li.active{
+                        display: block;
+                    }
+                    li{
+                        display: none;
+                    }
+                }
+            }
+
+            .input{
+                width: 20%;
+                margin: 0;
+                input{
+                    width: 40px;
+                    height: 20px;
+                    display: none;
+                }
+
+                i.fa-search{
+                    display: none;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+        // finished header
+
+        // slider
+        .slider{
+            width: 100%;
+            height: auto;
+            // background-color: rebeccapurple;
+
+            .menu{
+                width: 100%;
+                height: 100%;
+                margin:auto;
+                li{
+                    ul{
+                        left: 25%;
+                    }
+                }
+            }
+            .slide{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            .capture{
+                display: block;
+            }
+        }
+        // finished slider
+
+        //contents
+        .contents{
+            width: 100%;
+            height: auto;
+
+            .content{
+                width: 100%;
+                height: auto;
+                margin:0 auto;
+
+                .card{
+                    width: 100%;
+                    margin-left: 10px;
+                   
+                }
+            }
+        }
+        // finished contents
+
+        //footer
+            .footer{
+                width: 100%;
+                height: auto;
+            }
+        //finished footer
+    }
+}
+
+// max-width: 1024px (máy tính bảng loại to, hiển thị theo chiều ngang)
+@media screen and (max-width: 1024px){
+    .home{
+        width: 100%;
+        height: auto;
+        // background-color: yellow;
+
+        // header
+        .header{
+            width: 100%;
+            height: 70px;
+            
+            .logo-img{
+                width: 7%;
+                height: 40px;
+            }
+
+            .logo-text{
+                width: 13%;
+                height: 40px;
+                margin-left: 10px;
+                
+
+                p{
+                    font-size: 1.2em;
+
+                }
+            }
+
+            .categories{
+                
+                width: 60%;
+                h3{
+                    font-size: 1.5em;
+                   padding-bottom: 20px;
+                    display: inline;
+                    
+                }
+                ul{
+
+                    li.active{
+                        display: block;
+                    }
+                    li{
+                        display: block;
+                    }
+                }
+            }
+
+            .input{
+                width: 20%;
+                margin: 0;
+                input{
+                    width: 40px;
+                    height: 20px;
+                    display: none;
+                }
+
+                i.fa-search{
+                    display: none;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+        // finished header
+
+        // slider
+        .slider{
+            width: 100%;
+            height: auto;
+            // background-color: rebeccapurple;
+
+            .menu{
+                width: 100%;
+                height: 100%;
+                margin:auto;
+                li{
+                    ul{
+                        left: 22%;
+                    }
+                }
+            }
+            .slide{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            .capture{
+                display: block;
+            }
+        }
+        // finished slider
+
+        //contents
+        .contents{
+            width: 100%;
+            height: 1600px;
+
+            .content{
+                width: 100%;
+                height: auto;
+                margin:0 auto;
+
+                .card{
+                    width: 100%;
+                    height: auto;
+                    margin-left: 10px;
+                   
+                }
+            }
+        }
+        // finished contents
+
+        //footer
+            .footer{
+                width: 100%;
+                height: auto;
+            }
+        //finished footer
+    }
+}

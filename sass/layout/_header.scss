@@ -1,0 +1,93 @@
+.header{
+    background-color: $primary-color;
+    width: 100%;
+    height: 68px;
+    // position: fixed;
+    
+
+    .container{
+        width: 100%;
+        height: 100%;
+        // background-color: aqua;
+        
+        .logo-img{
+            float: left;
+            width: 5%;
+            height: 100%;
+
+            // background-color: goldenrod;
+            img{
+                width: 100%;
+                height: 60%;   
+            }
+
+        }
+
+        .logo-text{
+            float: left;
+            width: 10%;
+            height: 100%;
+            // background-color: red;
+            @include border-solid('right');
+
+            p{
+                
+                color:$title-color;
+                font-size: 2.5rem;
+                font-family: $font-text;
+
+                span{
+                    color: aqua;
+                }
+            }
+        }
+
+        .categories{
+            width: 40%;
+            height: 100%;
+            // background-color: gray;
+            float: left;
+
+            h3{
+                display: inline-block;
+                font-family: $font-text;
+            }
+            
+            a:hover{
+                @include border-solid('bottom');
+                color: rgb(105, 101, 101);
+            }
+            li.active{
+                a{
+                    background-color: rgb(42, 42, 252);
+                    padding: 7px 10px;
+                    color: white;
+                    border-radius: 4px;
+                }
+            }
+
+        }
+
+        .input{
+            width: 30%;
+            height: 100%;
+            float: left;
+            // background-color: cadetblue;
+
+                i{  
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    @include border-solid('both');
+                    padding-top: 6px;
+                    cursor: pointer;
+                    &:hover{
+                    color: white;
+                    background-color: rgb(117, 110, 110);
+                    }
+                   
+                }
+            }
+        }
+    }
+    

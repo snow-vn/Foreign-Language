@@ -1,0 +1,133 @@
+
+$w-wide: 1200px;
+$w-tablet: 644px;
+$w-pc: 984px;
+
+.grid {
+    width: 100%;
+    display: grid;
+    padding: 0;
+    &.wide {
+        max-width: $w-wide;
+        margin: 0 auto;
+    }
+
+    &.grid-cols {
+        @for $w-cols from 0 through 12  {
+            &-#{$w-cols} {
+                grid-template-columns: repeat($w-cols, minmax(0, #{$w-cols}fr));
+            }
+        }
+    }
+
+    .col-none {
+        display: none;
+    }
+
+    .col-span {
+        @for $w-col from 0 through 12  {
+            &-#{$w-col} {
+                grid-column: span $w-col/ span $w-col;
+            }
+        }
+    }
+
+    &.gap {
+        @for $w-gap from 0 through 4  {
+            &-#{$w-gap} {
+                gap: $w-gap * 0.4rem;
+            }
+        }
+    }
+
+//     tablet
+    @media screen and (max-width: 740px) {
+        &.gap-md {
+            @for $w-gap from 0 through 4  {
+                &-#{$w-gap} {
+                    gap: $w-gap * 0.4rem;
+                }
+            }
+        }
+
+        &.grid-cols-md {
+            @for $w-cols from 0 through 12  {
+                &-#{$w-cols} {
+                    grid-template-columns: repeat($w-cols, minmax(0, #{$w-cols}fr));
+                }
+            }
+        }
+        %dp-tablet {
+            display: block;
+        }
+        .col-span-md {
+            @for $w-col from 0 through 12  {
+                &-#{$w-col} {
+                    grid-column: span $w-col/ span $w-col;
+                    @extend %dp-tablet;
+                }
+            }
+        }           
+    }
+// pc low ->
+    @media screen and (max-width: 1113px){
+        &.grid-cols-lg {
+            @for $w-cols from 0 through 12  {
+                &-#{$w-cols} {
+                    grid-template-columns: repeat($w-cols, minmax(0, #{$w-cols}fr));
+                }
+            }
+        }
+        &.gap-lg {
+            @for $w-gap from 0 through 4  {
+                &-#{$w-gap} {
+                    gap: $w-gap * 0.4rem;
+                }
+            }
+        }
+        .col-span-lg {
+            @for $w-col from 0 through 12  {
+                &-#{$w-col} {
+                    grid-column: span $w-col/ span $w-col;
+                }
+            }
+        }
+    }
+    @media (min-width: 740px) and (max-width: 1023px) {
+        &.wide {
+          width: $w-tablet; 
+        } 
+    }
+// <pc hight (wide)
+    @media (min-width: 1024px) and (max-width: 1239px) {
+        &.wide {
+            width: $w-pc;
+            &.gap {
+                @for $w-gap from 0 through 4  {
+                    &-#{$w-gap} {
+                        gap: $w-gap * 0.4rem;
+                    }
+                }
+            }
+            &.grid-cols-lg {
+                @for $w-cols from 0 through 12  {
+                    &-#{$w-cols} {
+                        grid-template-columns: repeat($w-cols, minmax(0, #{$w-cols}fr));
+                    }
+                }
+            }
+            %dp-desktop {
+                display: block;
+            }
+            .col-span-lg {
+                @for $w-col from 0 through 12  {
+                    &-#{$w-col} {
+                        grid-column: span $w-col/ span $w-col;
+                        @extend %dp-desktop;
+                    }
+                }
+            }
+        }
+    }
+}
+
